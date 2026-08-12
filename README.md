@@ -13,80 +13,19 @@
 
 ## 📖 About
 
-This repo contains a set of Rofi scripts I use daily to speed up common tasks — launching apps, managing windows, clipboard history, power menus, and more. Each script is self-contained, lightweight, and easy to theme.
+This repo contains a set of Rofi scripts I use daily (or have used) to speed up common tasks — launching apps, managing windows, clipboard history, power menus, and more. I try to develop all scripts to be the most simple and theme-agnostic possible.
+> [!IMPORTANT]
+> All scripts have been developed and tested **only** on wayland
 
-Click into each section below to see a short demo of the script in action.
-
-## 📑 Table of Contents
-
-- [Scripts](#-scripts)
-  - [Power Menu](#power-menu)
-  - [Clipboard Manager](#clipboard-manager)
-  - [App Launcher](#app-launcher)
-- [Contributing](#-contributing)
-- [License](#-license)
-
-## 🧩 Scripts
-
-### Power Menu
-Shutdown, reboot, lock, log out, and suspend
-
-**Usage:**
-```bash
-./scripts/power-menu.sh
-```
-
-<details>
-<summary>▶️ Click to view demo</summary>
-<br>
-
-<!-- Paste your video/gif here, e.g.:
-https://github.com/user-attachments/assets/your-video-id
--->
-
-</details>
-
-### Clipboard Manager
-
-Browse and paste from your clipboard history without leaving the keyboard.
-
-**Dependencies:** `wl-clipboard`
-
-**Usage:**
-```bash
-./scripts/clipboard.sh
-```
-
-<details>
-<summary>▶️ Click to view demo</summary>
-<br>
-
-<!-- Paste your video/gif here -->
-
-</details>
-
-### App Launcher
-
-A themed drop-in replacement for the default `rofi -show drun` launcher.
-
-**Usage:**
-```bash
-./scripts/launcher.sh
-```
-
-<details>
-<summary>▶️ Click to view demo</summary>
-<br>
-
-<!-- Paste your video/gif here -->
-
-</details>
-
----
+## </> List of Scripts
+- rofi-info.sh -- Script for quickly showing some system information. It displays a notification with the information of the selected option. On the case of the wifi, bluetooth and audio options, it also gives you the possibility to open apps/TUIs to manage them (i.e. blueman-manager)
+- rofi-mpris.sh -- Script for managing media. It shows you all the current playing media and let's you pause/play, stop, go to previous, go to next and shuffle for each.
+- rofi-power.sh -- Simple script for log-out, shutdown, reboot and suspend 
+- rofi-performance.py --  Script for choosing the current power mode (performance, balanced, power-saver)
 
 ## 🎨 Configuration and Themes
 
-Most scripts read shared theming from [`config/theme.rasi`](config/theme.rasi). Edit colors, fonts, and sizing there to restyle every script at once.
+Most scripts share the default theming from your `.config.rasi` file.
 
 ## 🤝 Contributing
 
