@@ -19,9 +19,8 @@ else
             systemctl reboot
             ;;
         "$lock")
-            swaylock             
-	    ;;
-
+            setsid swaylock -f > /dev/null 2>&1 &             
+	    	;;
         "$suspend")
             mpc --quiet pause
             amixer set Master mute
