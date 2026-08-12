@@ -11,8 +11,6 @@
 
 </div>
 
----
-
 ## 📖 About
 
 This repo contains a set of Rofi scripts I use daily to speed up common tasks — launching apps, managing windows, clipboard history, power menus, and more. Each script is self-contained, lightweight, and easy to theme.
